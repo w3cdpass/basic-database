@@ -1,0 +1,67 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <title>Homepage</title>
+</head>
+<body>
+    <div class="header">
+        <h1>Welcome To Management System </h1>
+    </div>
+    <div class="subheading">
+        <h2>
+            Hi {{username}} ! You can manage here.
+        </h2>
+    </div>
+    <div class="box-container">
+        <a href="/employee-data" class="box-link">
+            <div class="box">
+                 <h3>
+                     Employee
+                 </h3>
+                <p>
+                    Track Your Staff Progress.<br>
+                    By entering their data.<br>
+                    Based on their Designation.
+                </p>
+                <button>Enter data here</button>
+            </div>
+        </a>
+        <a href="/attendance-data" class="box-link">
+            <div class="box">
+                <h3>Attendence</h3>
+                <p>
+                    Track your Employee attendance.<br>
+                    You can Manual edit their attendance.<br>
+                    Also you can mark their attendance.
+                </p>
+                <button>Enter data here</button>
+            </div>
+        </a>
+        <a href="/salary-data" class="box-link">
+            <div class="box">
+                <h3> Salary</h3>
+                <p>
+                    Track Pay-rolls of your employee.<br>
+                </p>
+                <button>Enter data here</button>
+            </div>
+        </a>
+        <a href="/reports-data" class="box-link">
+            <div class="box">
+                <p>
+                    Reports!
+                </p>
+                <button>Enter data here</button>
+            </div>
+        </a>
+</div>
+ <a href="/">Logout</a>
+
+</body>
+</html>
+
+
